@@ -19,7 +19,7 @@ Simply download the mod from the [Steam Workshop](https://steamcommunity.com/sha
 * [TFAR 0.9.x](https://steamcommunity.com/sharedfiles/filedetails/?id=620019431) or [TFAR 1.0.x BETA](https://steamcommunity.com/sharedfiles/filedetails/?id=894678801)
 
 ### Optional Mods
-* [ACE 3](https://steamcommunity.com/sharedfiles/filedetails/?id=909547724)
+* [ACE 3](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057)
 
 ## Contents
 * MARPAT Woodland, Desert, Coyote and Ranger Green camouflage
