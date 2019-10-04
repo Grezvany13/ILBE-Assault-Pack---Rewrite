@@ -23,11 +23,17 @@ Simply download the mod from the [Steam Workshop](https://steamcommunity.com/sha
 
 ## Contents
 * MARPAT Woodland, Desert, Coyote and Ranger Green camouflage
+* Alpine, Arid, Black, MCT, MC, OCP and WD camouflage patterns by Bacon
 * 3 different antennas with different ranges (only for TFAR so far)
 * Antennas can be interchanged with ACE Interaction system, or with Action Menu (scroll wheel) when ACE is not loaded.
 * The different antennas give different ranges, and extending the Whip Antenna increases its range as well.
 * Placeable RF-3080 sat antenna with ACE Interaction system, or with Action Menu (scroll wheel) when ACE is not loaded.
 * If the player is near the RF-3080 antenna, the player has 4 times the TX/RX range (only for TFAR so far)
+
+## Contributors
+* **Grezvany13**: Main developer of the Rewrite version
+* **Raspu**: Created the initial ILBE Assault Pack mod (models, textures and script)
+* **Bacon**: Created additional textures for the ILBE AP (which are added in this mod with his permission)
 
 ## Bugs
 
