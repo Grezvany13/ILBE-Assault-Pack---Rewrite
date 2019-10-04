@@ -37,3 +37,68 @@ class tfw_ilbe_whip_gr: tfw_ilbe_whip_Base {
     picture = "y\tfw_radios\addons\ilbe\data\icons\ilbe_icon_gr.paa";
     hiddenSelectionsTextures[] = {"y\tfw_radios\addons\ilbe\data\model\ilbe_gr_co.paa"};
 };
+
+// Re-textures by Bacon
+class tfw_ilbe_whip_alpine: tfw_ilbe_whip_Base {
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+    author = "Bacon";
+    displayName = "[ILBE] RT-1523G (ASIP) + Whip Antenna (Alpine)";
+    picture = "y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+    hiddenSelectionsTextures[] = {"y\tfw_radios\addons\ilbe\data\model\ilbe_alpine_co.paa"};
+};
+class tfw_ilbe_whip_arid: tfw_ilbe_whip_Base {
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+    author = "Bacon";
+    displayName = "[ILBE] RT-1523G (ASIP) + Whip Antenna (Arid)";
+    picture = "y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+    hiddenSelectionsTextures[] = {"y\tfw_radios\addons\ilbe\data\model\ilbe_arid_co.paa"};
+};
+class tfw_ilbe_whip_black: tfw_ilbe_whip_Base {
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+    author = "Bacon";
+    displayName = "[ILBE] RT-1523G (ASIP) + Whip Antenna (Black)";
+    picture = "y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+    hiddenSelectionsTextures[] = {"y\tfw_radios\addons\ilbe\data\model\ilbe_black_co.paa"};
+};
+class tfw_ilbe_whip_mct: tfw_ilbe_whip_Base {
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+    author = "Bacon";
+    displayName = "[ILBE] RT-1523G (ASIP) + Whip Antenna (MCT)";
+    picture = "y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+    hiddenSelectionsTextures[] = {"y\tfw_radios\addons\ilbe\data\model\ilbe_mct_co.paa"};
+};
+class tfw_ilbe_whip_mc: tfw_ilbe_whip_Base {
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+    author = "Bacon";
+    displayName = "[ILBE] RT-1523G (ASIP) + Whip Antenna (Multicam)";
+    picture = "y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+    hiddenSelectionsTextures[] = {"y\tfw_radios\addons\ilbe\data\model\ilbe_multicam_co.paa"};
+};
+class tfw_ilbe_whip_ocp: tfw_ilbe_whip_Base {
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+    author = "Bacon";
+    displayName = "[ILBE] RT-1523G (ASIP) + Whip Antenna (OCP)";
+    picture = "y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+    hiddenSelectionsTextures[] = {"y\tfw_radios\addons\ilbe\data\model\ilbe_ocp_co.paa"};
+};
+class tfw_ilbe_whip_wd2: tfw_ilbe_whip_Base {
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+    author = "Bacon";
+    displayName = "[ILBE] RT-1523G (ASIP) + Whip Antenna (WD)";
+    picture = "y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+    hiddenSelectionsTextures[] = {"y\tfw_radios\addons\ilbe\data\model\ilbe_wd_co.paa"};
+};
