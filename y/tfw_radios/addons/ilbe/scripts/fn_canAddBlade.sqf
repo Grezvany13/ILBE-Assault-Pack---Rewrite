@@ -19,11 +19,14 @@
 private ["_backpack"];
 
 _backpack = backpack player;
+_return = false;
 
-_currentBackpack = ((_backpack splitString "_") select [0,2]) joinString "_";
-_currentAntenna = (_backpack splitString "_") select 2;
-_currentColor = (_backpack splitString "_") select 3;
+if (_backpack isKindOf "tfw_ilbe_Base") then {
+    _currentBackpack = ((_backpack splitString "_") select [0,2]) joinString "_";
+    _currentAntenna = (_backpack splitString "_") select 2;
+    _currentColor = (_backpack splitString "_") select 3;
 
-_return = (_currentAntenna != "blade") && ("tfw_blade" in (items player + assignedItems player));
+    _return = (_currentAntenna != "blade") && ("tfw_blade" in (items player + assignedItems player));
+};
 
 _return
