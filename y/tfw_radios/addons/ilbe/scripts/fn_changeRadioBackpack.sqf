@@ -1,3 +1,5 @@
+#include "script_component.hpp"
+
 /*
   Name: tfw_radios_ilbe_fnc_changeRadioBackpack
 
@@ -5,7 +7,7 @@
     Checks if it's possible to change the current backpack to the retracted Whip Antenna variant
 
   Arguments:
-    0: _newBackpack     <STRING>    Which backpack object should be used. 
+    0: _newBackpack     <STRING>    Which backpack object should be used.
     1: _newAntenna      <STRING>    Which antenna does this new backpack have.
     2: _currentAntenna  <STRING>    Which antenna is being removed.
 
@@ -43,4 +45,27 @@ if (_currentAntenna != _newAntenna) then {
     player addItem (["tfw", _currentAntenna] joinString "_");
 };
 
-player playAction "medicStop";
+
+// --
+// It would make more sense to have the animation start running before any code, however this seems
+// to kill the animation due to the backpack change.
+// --
+
+// Select animation based on the current stance of the player (prone or kneeled)
+_anim =  ["AinvPknlMstpSlayW[wpn]Dnon_medicOther", "AinvPpneMstpSlayW[wpn]Dnon_medicOther"] select (stance player == "PRONE");
+
+// Adjust animation based on the current weapon of the player
+private _wpn = ["non", "rfl", "lnr", "pst"] param [["", primaryWeapon player, secondaryWeapon player, handgunWeapon player] find currentWeapon player, "non"];
+_anim = [_anim, "[wpn]", _wpn] call CBA_fnc_replace;
+
+player playMoveNow _anim;
+
+/*
+// Play the animation globally
+["playMoveNow", [player, _anim], player] call CBA_fnc_targetEvent;
+
+if (animationState player != _anim) then {
+    // Execute on all machines. SwitchMove has local effects.
+    ["switchMove", [player, _anim]] call CBA_fnc_globalEvent;
+};
+*/
