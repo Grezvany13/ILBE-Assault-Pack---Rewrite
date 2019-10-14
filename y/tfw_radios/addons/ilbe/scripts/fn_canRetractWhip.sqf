@@ -27,6 +27,10 @@ if (_backpack isKindOf "tfw_ilbe_Base") then {
     _currentColor = (_backpack splitString "_") select 3;
 
     _return = (_currentAntenna == "whipext");
+
+    if (_return && isClass(configFile >> "CfgPatches" >> "acre_main")) then {
+        _return = [player, "ACRE_PRC117F"] call acre_api_fnc_hasKindOfRadio;
+    };
 };
 
 _return

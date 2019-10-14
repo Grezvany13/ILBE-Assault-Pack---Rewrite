@@ -8,9 +8,9 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "cba_main",
-            // "task_force_core",               // don't add for compatibility reasons!
-            "task_force_radio",
-            "task_force_radio_items"
+            // "task_force_core"                // only works for TFAR 1.0 (beta)
+            // "task_force_radio"               // required for TFAR version
+            "acre_main"                      // Required for ACRE2 version
         };
         author = "$STR_twf_radios_main_Author";
         url = "$STR_twf_radios_URL";
@@ -21,7 +21,7 @@ class CfgPatches {
 class CfgMods {
     class PREFIX {
         dir = "@TFW_Radios_Rewrite";
-        name = "ILBE Assault Pack (TFAR) - Rewrite";
+        name = "ILBE Assault Pack (ACRE2) - Rewrite";
         picture = "";
         hidePicture = "true";
         hideName = "true";

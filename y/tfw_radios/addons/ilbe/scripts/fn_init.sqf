@@ -24,8 +24,14 @@ if(isDedicated) exitWith {false};
 waitUntil {!isNull player};
 waitUntil {isPlayer player};
 
-// fix in case this script is called before TFAR init
-TFAR_currentUnit = call TFAR_fnc_currentUnit;
+if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
+    acre_player = player;
+};
+if (isClass(configFile >> "CfgPatches" >> "task_force_radio")) then {
+    // fix in case this script is called before TFAR init
+    TFAR_currentUnit = call TFAR_fnc_currentUnit;
+};
+
 
 if (!isClass(configFile >> "CfgPatches" >> "ace_interact_menu")) then {
     // If ACE isn't present, use regular AddAction to exchange the antennas

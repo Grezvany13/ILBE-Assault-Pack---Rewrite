@@ -5,27 +5,7 @@ class CfgPatches {
 		units[] = {
             "tfw_bladeItem",
             "tfw_whipItem",
-            "tfw_ddItem",
-
-            "tfw_ilbe_wd",
-            "tfw_ilbe_d",
-            "tfw_ilbe_coy",
-            "tfw_ilbe_gr",
-
-            "tfw_ilbe_a_wd",
-            "tfw_ilbe_a_d",
-            "tfw_ilbe_a_coy",
-            "tfw_ilbe_a_gr",
-
-            "tfw_ilbe_dd_wd",
-            "tfw_ilbe_dd_d",
-            "tfw_ilbe_dd_coy",
-            "tfw_ilbe_dd_gr",
-
-            "tfw_ilbe_blade_wd",
-            "tfw_ilbe_blade_d",
-            "tfw_ilbe_blade_coy",
-            "tfw_ilbe_blade_gr"
+            "tfw_ddItem"
         };
 		weapons[] = {
             "tfw_blade",
@@ -42,6 +22,8 @@ class CfgPatches {
 		versionAr[] = {1,1,0};
 	};
 };
+
+#include "CfgAcreComponents.hpp"
 
 #include "CfgFactionClasses.hpp"
 #include "CfgWeapons.hpp"

@@ -63,7 +63,36 @@ class CfgVehicles {
 					priority = 5;
 					icon = "\y\tfw_radios\addons\rf3080\data\icons\interact_icon.paa";
 				};
+
+                class ACRE_connect {
+                    selection = "";
+                    displayName = "Connect";
+                    distance = 10;
+                    condition = "(isClass(configFile >> 'CfgPatches' >> 'acre_main')) && {!([_player,_target] call acre_sys_gsa_fnc_isAntennaConnected)}";
+                    statement = QUOTE(true);
+                    insertChildren = "[_player,_target] call acre_sys_gsa_fnc_connectChildrenActions";
+                    showDisabled = 0;
+                    exceptions[] = {};
+                    priority = 5;
+                    icon = "\idi\acre\addons\ace_interact\data\icons\antenna.paa";
+                };
+                class ACRE_disconnect {
+                    selection = "";
+                    displayName = "Disconnect";
+                    distance = 10;
+                    condition = "(isClass(configFile >> 'CfgPatches' >> 'acre_main')) && {[_player,_target] call acre_sys_gsa_fnc_isAntennaConnected}";
+                    statement = "[_player,_target] call acre_sys_gsa_fnc_disconnect";
+                    showDisabled = 0;
+                    exceptions[] = {};
+                    priority = 5;
+                    icon = "\idi\acre\addons\ace_interact\data\icons\antenna.paa";
+                };
 			};
 		};
+        class AcreComponents {
+            componentName = "ACRE_643CM_VHF_TNC";
+            mountedAntenna = "";
+            mastMount[] = {};
+        };
 	};
 };
