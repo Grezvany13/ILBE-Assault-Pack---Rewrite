@@ -33,7 +33,11 @@ if ((_unit call CBA_fnc_getUnitAnim) select 0 == "stand") then {
 
     if (isNull _rf3080) exitWith {};
 
-    deleteVehicle _rf3080;
+    if (player canAdd "tfw_rf3080Item") then {
+        deleteVehicle _rf3080;
 
-    _unit addItem "tfw_rf3080Item";
+        _unit addItem "tfw_rf3080Item";
+    } else {
+        hint format ["Can't put %1 in inventory because there is no room", getText (configFile >> "CfgWeapons" >> "tfw_rf3080Item" >> "displayName")];
+    };
 }, [_unit, _rf3080], 1] call cba_fnc_waitAndExecute;
