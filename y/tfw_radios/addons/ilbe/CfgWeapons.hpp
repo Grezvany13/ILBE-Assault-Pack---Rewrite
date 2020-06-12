@@ -1,12 +1,7 @@
 class CfgWeapons {
-	class ItemCore;
-	class InventoryItem_Base_F;
-	class tfw_ItemCore: ItemCore {
-		type = 131072;
-		detectRange = -1;
-		simulation = "ItemMineDetector";
-	};
-	class tfw_blade: tfw_ItemCore {
+	class CBA_MiscItem;
+	class CBA_MiscItem_ItemInfo;
+	class tfw_blade: CBA_MiscItem {
 		author = "Raspu";
 		scope = 2;
 		scopeArsenal = 2;
@@ -15,11 +10,11 @@ class CfgWeapons {
 		picture = "\y\tfw_radios\addons\ilbe\data\icons\icon_blade.paa";
 		//editorPreview = "\y\tfw_radios\addons\ilbe\data\editorui\blade.jpg";
 		displayName = "VHF Blade Antenna";
-		class ItemInfo: InventoryItem_Base_F {
+		class ItemInfo: CBA_MiscItem_ItemInfo {
 			mass = 10;
 		};
 	};
-	class tfw_dd: tfw_ItemCore {
+	class tfw_dd: CBA_MiscItem {
 		author = "Raspu";
 		scope = 2;
 		scopeArsenal = 2;
@@ -28,11 +23,11 @@ class CfgWeapons {
 		picture = "\y\tfw_radios\addons\ilbe\data\icons\icon_dd.paa";
 		//editorPreview = "\y\tfw_radios\addons\ilbe\data\editorui\dd.jpg";
 		displayName = "VHF/ UHF Antenna";
-		class ItemInfo: InventoryItem_Base_F {
+		class ItemInfo: CBA_MiscItem_ItemInfo {
 			mass = 10;
 		};
 	};
-	class tfw_whip: tfw_ItemCore {
+	class tfw_whip: CBA_MiscItem {
 		author = "Raspu";
 		scope = 2;
 		scopeArsenal = 2;
@@ -41,7 +36,7 @@ class CfgWeapons {
 		picture = "\y\tfw_radios\addons\ilbe\data\icons\icon_whip.paa";
 		//editorPreview = "\y\tfw_radios\addons\ilbe\data\editorui\whip.jpg";
 		displayName = "VHF Whip Antenna";
-		class ItemInfo: InventoryItem_Base_F {
+		class ItemInfo: CBA_MiscItem_ItemInfo {
 			mass = 10;
 		};
 	};
