@@ -19,7 +19,7 @@
 [{
     private _object = getPos player nearestObject "tfw_rf3080Object";
     if ((_object distance player) < 6) then {
-		player setVariable ['tf_sendingDistanceMultiplicator', 4, true];
+		player setVariable ['tf_sendingDistanceMultiplicator', ILBE_satcom_gain, true];
 	} else {
         player setVariable ['tf_sendingDistanceMultiplicator', 1, true];
 	};
