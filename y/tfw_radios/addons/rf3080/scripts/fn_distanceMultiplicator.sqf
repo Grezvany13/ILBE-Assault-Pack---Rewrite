@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
   Name: tfw_radios_rf3080_fnc_distanceMultiplicator
 
@@ -19,11 +20,12 @@
 [{
     private _object = getPos player nearestObject "tfw_rf3080Object";
     if ((_object distance player) < 6) then {
-		player setVariable ['tf_sendingDistanceMultiplicator', ILBE_satcom_gain, true];
-	} else {
+        private _gain = QGVAR(gain) call CBA_settings_fnc_get;
+        player setVariable ['tf_sendingDistanceMultiplicator', _gain, true];
+    } else {
         player setVariable ['tf_sendingDistanceMultiplicator', 1, true];
-	};
-	if (isNull _object) exitWith {
+    };
+    if (isNull _object) exitWith {
         (_this select 1) call CBA_fnc_removePerFrameHandler;
-	};
+    };
 }, 10] call CBA_fnc_addPerframeHandler;
